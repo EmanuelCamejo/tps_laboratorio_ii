@@ -35,11 +35,16 @@ namespace Entidades
 
         public Operando(string strNum1)
         {
-            Numero = strNum1;//Utilizo la propiedad para validar el string recibido
+            Numero = strNum1;//Utilizo la propiedad para validar el string recibido 
         }
         #endregion
 
         #region Metodos
+        
+        /// <summary>
+        /// Valido que sea un número el parametro recibido
+        /// </summary>
+        /// <returns></returns>
         private double ValidarOperando(string strNumero)
         {
             double resultado, num;
@@ -56,6 +61,10 @@ namespace Entidades
             return resultado;
         }
 
+        /// <summary>
+        /// Valido que sea un binario para saber si se puede pasar a decimal
+        /// </summary>
+        /// <returns></returns>
         private bool EsBinario(string binario)
         {
             foreach (char c in binario)

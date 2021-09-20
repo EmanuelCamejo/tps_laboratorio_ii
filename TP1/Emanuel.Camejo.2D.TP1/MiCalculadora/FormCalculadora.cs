@@ -18,9 +18,7 @@ namespace MiCalculadora
             InitializeComponent();
         }
 
-        /// <summary>
-        /// Limpio los TextBox el ComboBox y el Label de la pantalla 
-        /// </summary>
+        
         public void Limpiar()
         {
             txtNumero1.Clear();

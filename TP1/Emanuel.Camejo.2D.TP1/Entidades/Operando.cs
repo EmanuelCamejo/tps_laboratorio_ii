@@ -40,11 +40,12 @@ namespace Entidades
         #endregion
 
         #region Metodos
-        
+
         /// <summary>
-        /// Valido que sea un número el parametro recibido
+        /// Valido que sea un número el parámetro recibido caso contrario devuelve el numero 0
         /// </summary>
-        /// <returns></returns>
+        /// <param name="strNumero">un atributo de tipo string</param>
+        /// <returns>Devuelve un double con el resultado de la validación</returns>
         private double ValidarOperando(string strNumero)
         {
             double resultado, num;
@@ -62,9 +63,10 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Valido que sea un binario para saber si se puede pasar a decimal
+        /// Valida si el parametro recibido es un número binario.
         /// </summary>
-        /// <returns></returns>
+        /// <param name="binario">Un parametro de tipo String</param>
+        /// <returns>Devuelve un valor Bool para saber si es binario o no</returns>
         private bool EsBinario(string binario)
         {
             foreach (char c in binario)
@@ -78,44 +80,58 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Convierte un número Decimal a Binario.
+        /// Convierte un número decimal pasado por parametro de tipo string
         /// </summary>
-        /// <returns></returns>
+        /// <param name="numero">Un parametro de tipo String que converita en Binario</param>
+        /// <returns>Devuelve un string con el Binario construido</returns>
         public string DecimalBinario(string numero)
         {
             string valorBinario = string.Empty;
-            int resultadoDivicion = Math.Abs(((int)double.Parse(numero)));//Obtengo el valor absoluto y entero
-            int resto;
-            if (resultadoDivicion >= 0)
-            {
-                do
-                {
-                    resto = resultadoDivicion % 2;
-                    resultadoDivicion /= 2;
-                    valorBinario = resto.ToString() + valorBinario;
+            string resultado;
 
-                } while (resultadoDivicion > 0);
+            if (int.TryParse(numero, out int noEsUnaLetra))
+            {
+                int resultadoDivicion = Math.Abs(int.Parse(numero));//Obtengo el valor absoluto y entero
+                int resto;
+                if (resultadoDivicion >= 0)
+                {
+                    do
+                    {
+                        resto = resultadoDivicion % 2;
+                        resultadoDivicion /= 2;
+                        valorBinario = resto.ToString() + valorBinario;
+
+                    } while (resultadoDivicion > 0);
+                }
+                resultado=valorBinario;
             }
-            return valorBinario;
+            else
+            {
+                resultado = "Valor Invalido";
+            }
+            return resultado;
         }
 
         /// <summary>
-        /// Sobrecarga del metodo DecimalBinario
+        /// Sobrecarga del metodo DecimalBinario, reutilizo el codigo. 
         /// </summary>
         /// <returns></returns>
         public string DecimalBinario(double numero)
         {
-            string valorBinario = DecimalBinario(numero);
+            string valorBinario = DecimalBinario(numero.ToString());
             return valorBinario;
         }
 
+
         /// <summary>
-        /// Convierte un número Binario a Decimal, utilizo el metodo EsBinario para el parametro recibido.
+        /// Convierte un número Binario a Decimal, utilizo el método EsBinario para el parámetro recibido.
         /// </summary>
-        /// <returns></returns>
+        /// <param name="binario">Parametro de tipo string</param>
+        /// <returns>Retorna un string con el numero Decima si es que se puede sino retorna texoto Valor Invalido</returns>
         public string BinarioDecimal(string binario)
         {
-            string resultado = "";
+            double resultado=0;
+            string valorRetorno;
             if (EsBinario(binario))
             {
                 int cantidadCaracteres = binario.Length;
@@ -127,12 +143,13 @@ namespace Entidades
                         resultado += (int)Math.Pow(2, cantidadCaracteres);
                     }
                 }
+                valorRetorno = resultado.ToString();
             }
             else
             {
-                resultado = "Valor Invalido";
+                valorRetorno = "Valor Invalido";
             }
-            return resultado;
+            return valorRetorno;
         }
 
         #endregion
@@ -154,7 +171,7 @@ namespace Entidades
         {
             if (num2.numero == 0)
             {
-                return double.MinValue;
+                return double.MinValue;//si la divición es por cero va a devolver el valor minimo permitido
             }
             else
             {

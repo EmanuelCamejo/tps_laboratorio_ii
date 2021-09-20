@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tp_pruebas\\Emanuel.Camejo.2D.TP1\\MiCalculadora\\MiCalculadora.csproj": {}
+    "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tps_laboratorio_ii\\TP1\\Emanuel.Camejo.2D.TP1\\MiCalculadora\\MiCalculadora.csproj": {}
   },
   "projects": {
-    "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tp_pruebas\\Emanuel.Camejo.2D.TP1\\Entidades\\Entidades.csproj": {
+    "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tps_laboratorio_ii\\TP1\\Emanuel.Camejo.2D.TP1\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tp_pruebas\\Emanuel.Camejo.2D.TP1\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tps_laboratorio_ii\\TP1\\Emanuel.Camejo.2D.TP1\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tp_pruebas\\Emanuel.Camejo.2D.TP1\\Entidades\\Entidades.csproj",
+        "projectPath": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tps_laboratorio_ii\\TP1\\Emanuel.Camejo.2D.TP1\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\ecamejo\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tp_pruebas\\Emanuel.Camejo.2D.TP1\\Entidades\\obj\\",
+        "outputPath": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tps_laboratorio_ii\\TP1\\Emanuel.Camejo.2D.TP1\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ecamejo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tp_pruebas\\Emanuel.Camejo.2D.TP1\\MiCalculadora\\MiCalculadora.csproj": {
+    "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tps_laboratorio_ii\\TP1\\Emanuel.Camejo.2D.TP1\\MiCalculadora\\MiCalculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tp_pruebas\\Emanuel.Camejo.2D.TP1\\MiCalculadora\\MiCalculadora.csproj",
+        "projectUniqueName": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tps_laboratorio_ii\\TP1\\Emanuel.Camejo.2D.TP1\\MiCalculadora\\MiCalculadora.csproj",
         "projectName": "MiCalculadora",
-        "projectPath": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tp_pruebas\\Emanuel.Camejo.2D.TP1\\MiCalculadora\\MiCalculadora.csproj",
+        "projectPath": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tps_laboratorio_ii\\TP1\\Emanuel.Camejo.2D.TP1\\MiCalculadora\\MiCalculadora.csproj",
         "packagesPath": "C:\\Users\\ecamejo\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tp_pruebas\\Emanuel.Camejo.2D.TP1\\MiCalculadora\\obj\\",
+        "outputPath": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tps_laboratorio_ii\\TP1\\Emanuel.Camejo.2D.TP1\\MiCalculadora\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ecamejo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tp_pruebas\\Emanuel.Camejo.2D.TP1\\Entidades\\Entidades.csproj": {
-                "projectPath": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tp_pruebas\\Emanuel.Camejo.2D.TP1\\Entidades\\Entidades.csproj"
+              "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tps_laboratorio_ii\\TP1\\Emanuel.Camejo.2D.TP1\\Entidades\\Entidades.csproj": {
+                "projectPath": "D:\\Facultad\\2do cuatrimestre 2021\\Program II - Lab II\\tps_laboratorio_ii\\TP1\\Emanuel.Camejo.2D.TP1\\Entidades\\Entidades.csproj"
               }
             }
           }

@@ -7,8 +7,11 @@ namespace Entidades
         #region Metodos
 
         /// <summary>
-        /// Realiza la operacion pedida entre los números recibidos por parametro
+        /// Realiza la operación pedida entre los números recibidos por parámetro
         /// </summary>
+        /// <param name="num1">Intancia de la clase Operando</param>
+        /// <param name="num2">Intancia de la clase Operando</param>
+        /// <param name="operador">Un atributo de tipo Char</param>
         /// <returns></returns>
         public static double Operar(Operando num1, Operando num2, char operador)
         {
@@ -35,9 +38,10 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Valida el Operador recibido por parametro
+        /// Valida el Operador recibido por parámetro.
         /// </summary>
-        /// <returns></returns>
+        /// <param name="operador">Un atributo de tipo Char</param>
+        /// <returns>Devuelve un char sengun el operador recibido</returns>
         private static char ValidarOperador(char operador)
         {
             if (operador == '+' || operador == '-' || operador == '/' || operador == '*')

@@ -49,6 +49,7 @@ namespace Entidades
         private double ValidarOperando(string strNumero)
         {
             double num;
+
             bool esNumerico = double.TryParse(strNumero, out num);
 
             return num;
@@ -100,7 +101,7 @@ namespace Entidades
             }
             else
             {
-                resultado = "Valor Invalido";
+                resultado = "Valor ingresado Invalido";
             }
             return resultado;
         }
@@ -139,7 +140,7 @@ namespace Entidades
             }
             else
             {
-                valorRetorno = "Valor Invalido";
+                valorRetorno = "Valor ingresado Invalido";
             }
             return valorRetorno;
         }

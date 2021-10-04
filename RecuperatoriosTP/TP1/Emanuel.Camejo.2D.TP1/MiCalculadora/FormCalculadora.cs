@@ -85,8 +85,8 @@ namespace MiCalculadora
         {
             if (String.IsNullOrEmpty(cmbOperador.Text))
             {
-                cmbOperador.SelectedIndex = '+';
-            }
+                cmbOperador.SelectedItem = '+';
+            }           
             double resultado = Operar(txtNumero1.Text, txtNumero2.Text,cmbOperador.SelectedItem.ToString());
             lblResultado.Text = resultado.ToString();
             lstOperaciones.Items.Add($"{txtNumero1.Text} {cmbOperador.SelectedItem.ToString()} {txtNumero2.Text} = {resultado.ToString()}");

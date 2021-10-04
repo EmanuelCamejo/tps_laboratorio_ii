@@ -55,9 +55,11 @@ namespace MiCalculadora
             cmbOperador.Items.Add('-');
             cmbOperador.Items.Add('*');
             cmbOperador.Items.Add('/');
+            cmbOperador.SelectedIndex = 0;
             Limpiar();
         }
 
+        
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             DialogResult resultado = MessageBox.Show("¿Seguro de querer salir?","Salir", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
@@ -65,6 +67,9 @@ namespace MiCalculadora
             {
                 this.Close();
             }
+        }
+        private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
+        {
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -109,5 +114,7 @@ namespace MiCalculadora
         }
 
         #endregion
+
+        
     }
 }

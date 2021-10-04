@@ -50,7 +50,6 @@ namespace MiCalculadora
             this.cmbOperador.Size = new System.Drawing.Size(141, 23);
             this.cmbOperador.Sorted = true;
             this.cmbOperador.TabIndex = 2;
-   
             // 
             // txtNumero2
             // 
@@ -163,6 +162,7 @@ namespace MiCalculadora
             this.MinimizeBox = false;
             this.Name = "FormCalculadora";
             this.Text = "Calculadora de Emanuel Camejo 2°D";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.btnCerrar_Click);
             this.Load += new System.EventHandler(this.FrmCalculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

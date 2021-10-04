@@ -35,7 +35,7 @@ namespace Entidades
 
         public Operando(string strNum1)
         {
-            Numero = strNum1;//Utilizo la propiedad para validar el string recibido 
+            Numero = strNum1;
         }
         #endregion
 
@@ -80,7 +80,8 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Convierte un número decimal pasado por parametro de tipo string
+        /// Convierte un número decimal pasado por parametro de tipo string. //utilizo la clase Math con el metodo Abs para
+        /// obtener el valor absoluto y entero
         /// </summary>
         /// <param name="numero">Un parametro de tipo String que converita en Binario</param>
         /// <returns>Devuelve un string con el Binario construido</returns>
@@ -91,7 +92,7 @@ namespace Entidades
 
             if (int.TryParse(numero, out int noEsUnaLetra))
             {
-                int resultadoDivicion = Math.Abs(int.Parse(numero));//Obtengo el valor absoluto y entero
+                int resultadoDivicion = Math.Abs(int.Parse(numero));
                 int resto;
                 if (resultadoDivicion >= 0)
                 {
@@ -155,7 +156,7 @@ namespace Entidades
         #endregion
 
         #region Sobrecargas de Operador 
-        //Creo las sobrecarga de los operadores para poder hacer las operaciones
+        //Creo las sobrecarga de los operadores para poder hacer las operaciones entre las instancias de Operando
         
         public static double operator +(Operando num1, Operando num2)
         {
@@ -171,7 +172,7 @@ namespace Entidades
         {
             if (num2.numero == 0)
             {
-                return double.MinValue;//si la divición es por cero va a devolver el valor minimo permitido
+                return double.MinValue;
             }
             else
             {
